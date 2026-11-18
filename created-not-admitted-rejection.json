@@ -1,0 +1,20 @@
+{
+  "admitted": false,
+  "material": {
+    "accepted_base_revision": "c5072ca269fcec854f56f9bbf3008f2cf1c1f39e",
+    "base_branch": "main",
+    "candidate_digest": "sha256:3549501186c43aa83c76e91a35a91d1d4df8d3fe7e46766837b485acf135038e",
+    "configuration_digest": "sha256:962eab16b0a1267631c05169bacc82e8e15d744a98bee222cd940f71d4380be2",
+    "head_revision": "0f3b6f1e42b87c2ba6383dcd7339975fce188c84",
+    "history_digest": "sha256:40f977f5940b16bf905102fbc91b32e5843a636fda78493fc6c443a14029cc23",
+    "repository": "alexhraber/decapod-admission-acceptance-20261118-1763-01",
+    "toolchain_digest": "sha256:71d5f74443b2efaa91cf89dde2145b931d3329074602ede0dd906935f6bc4c3a",
+    "tree_digest": "sha256:b47fbf20293ba7b956e5d4d1c81713b25c2737c448356827cfd17b3602f76fc0",
+    "work_branch": "agent/real-forge-admission/code_01m7pj94tkzaxqkf-repair",
+    "workflow_digest": "sha256:efce3c38fa75fd9e5b2e4dda6436a5cbb30ace668ba35f03bb7abb1e9aba2af5"
+  },
+  "merge_authorized": false,
+  "proof_plan_digest": "sha256:fbb8f4fbb5e5322bbab93f0dbbce157e0a6f774a54c8c7e4aaff16a61cc77352",
+  "reason": "Validation error: PR_CREATED_NOT_ADMITTED: https://github.com/alexhraber/decapod-admission-acceptance-20261118-1763-01/pull/1 exists or was observed, but admission failed; quarantine=draft_confirmed. Validation error: VALIDATION_HISTORY: WORKUNIT_PROOF_STALE: source, candidate, accepted target, policy, history or measured tool identity changed; obtain fresh full validation",
+  "schema": "decapod.publication-rejection.v1"
+}
