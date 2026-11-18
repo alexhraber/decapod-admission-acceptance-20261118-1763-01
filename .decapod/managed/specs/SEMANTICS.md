@@ -80,3 +80,12 @@ record that it is not applicable; this example is not a replay guarantee.
 
 ## Language Note
 - Primary language inferred: text
+
+<!-- decapod:codebase-attestation:start -->
+
+## Codebase Attestation
+
+- Repository signal fingerprint: `4b0722ce90562422562c3448c82bb7496fc170ec67a797dffaa80a8bfe229684`
+- Significant implementation surfaces: `src/` (2 files)
+- Refreshed from the current codebase by `decapod rpc --op specs.refresh`
+<!-- decapod:codebase-attestation:end -->

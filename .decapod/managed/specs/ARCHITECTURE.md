@@ -126,3 +126,16 @@ Do not assume database transactions, automatic retries, or side-effect rollback.
 |---|---|---|---|
 | Contract drift across components | Medium | High | Spec + schema checks in CI |
 | Runtime saturation under peak load | Medium | High | Capacity model + load tests |
+
+<!-- decapod:codebase-attestation:start -->
+
+## Codebase Attestation
+
+- Repository signal fingerprint: `4b0722ce90562422562c3448c82bb7496fc170ec67a797dffaa80a8bfe229684`
+- Significant implementation surfaces: `src/` (2 files)
+- Refreshed from the current codebase by `decapod rpc --op specs.refresh`
+<!-- decapod:codebase-attestation:end -->
+
+## Exact source admission contract
+
+The accepted payload is ready and the independent guard is required. Both literal source assertions must execute and pass for the exact candidate and GitHub main target. A draft PR can exist after rejected readback; creation is not admission. Later source or accepted-target changes invalidate applicability and never authorize merge.
