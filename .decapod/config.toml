@@ -1,0 +1,96 @@
+schema_version = "1.0.0"
+
+[context]
+declared_sources = []
+
+[custody]
+isolation = "worktree"
+
+[governance]
+approval_categories = ["destructive_operations"]
+protected_paths = []
+
+[init]
+ci = false
+diagram_style = "ascii"
+entrypoints = [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "CODEX.md",
+]
+specs = true
+
+[proof]
+validation_buildkite_preflights = false
+
+[[proof.commands]]
+args = [
+    "-F",
+    "-x",
+    "--",
+    "required",
+    "src/guard.txt",
+]
+command = "/usr/bin/grep"
+description = "Require the actual committed source to satisfy its literal accepted invariant"
+name = "guard-contract"
+required = true
+
+[[proof.commands]]
+args = [
+    "-F",
+    "-x",
+    "--",
+    "ready",
+    "src/payload.txt",
+]
+command = "/usr/bin/grep"
+description = "Require the actual committed source to satisfy its literal accepted invariant"
+name = "payload-contract"
+required = true
+
+[proof.repository_contract]
+reviewed_commands_digest = "sha256:f2020cbd4523fced9d3e2413e037d37b6ccde676f2205ccdc23aeb5be701e90a"
+source_coverage = []
+
+[proof.repository_contract.executions.guard-contract]
+directory = "."
+program = "/usr/bin/grep"
+timeout_seconds = 10
+
+[proof.repository_contract.executions.guard-contract.environment]
+LC_ALL = "C"
+
+[proof.repository_contract.executions.guard-contract.toolchain_files]
+declared-loader = "/usr/lib/dyld"
+
+[proof.repository_contract.executions.payload-contract]
+directory = "."
+program = "/usr/bin/grep"
+timeout_seconds = 10
+
+[proof.repository_contract.executions.payload-contract.environment]
+LC_ALL = "C"
+
+[proof.repository_contract.executions.payload-contract.toolchain_files]
+declared-loader = "/usr/lib/dyld"
+
+[proof.required_profile]
+id = "repo.pr-readiness.v1"
+reviewed_sources_digest = "sha256:a66fd5dd977abaa543a4de343f695eee0842da5a8f2a939dccff7b1554500580"
+
+[repo]
+architecture_direction = "cli"
+backend = "local"
+base_branch = "main"
+container_workspaces = false
+done_criteria = "Both accepted source assertions and exact-head/base PR admission pass; merge remains unauthorized"
+external_tracker = false
+primary_languages = ["text"]
+product_name = "Admission acceptance"
+product_summary = "A disposable source contract demonstrates governed rejection repair and exact-artifact PR admission"
+product_type = "service_or_library"
+
+[tracker]
+provider = "decapod"
