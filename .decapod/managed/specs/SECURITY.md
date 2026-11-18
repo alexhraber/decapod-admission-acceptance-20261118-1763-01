@@ -114,3 +114,16 @@ Describe the security primitives and security controls implemented in this repos
 - **Least Privilege**: Ensure minimal access permissions for all subsystems and roles.
 - **Input Validation**: Strictly validate all inputs at trust boundaries.
 - **Secure Storage**: Encrypt sensitive data at rest and in transit.
+
+<!-- decapod:codebase-attestation:start -->
+
+## Codebase Attestation
+
+- Repository signal fingerprint: `bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e`
+- Significant implementation surfaces: `src/` (2 files)
+- Refreshed from the current codebase by `decapod rpc --op specs.refresh`
+<!-- decapod:codebase-attestation:end -->
+
+## Exact source admission contract
+
+The accepted payload is ready and the independent guard is required. Both literal source assertions must execute and pass for the exact candidate and GitHub main target. A draft PR can exist after rejected readback; creation is not admission. Later source or accepted-target changes invalidate applicability and never authorize merge.

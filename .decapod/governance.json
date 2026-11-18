@@ -1,4 +1,151 @@
 {
   "schema_version": "1.0.0",
-  "baseline": {}
+  "baseline": {
+    "accepted_commit": "c5072ca269fcec854f56f9bbf3008f2cf1c1f39e"
+  },
+  "change": {
+    "id": "change_01M7PJ9J9TS3PCNJF3E0AZ226P",
+    "base_commit": "c5072ca269fcec854f56f9bbf3008f2cf1c1f39e",
+    "target_base": "origin/main"
+  },
+  "checkpoints": [
+    {
+      "id": "agent-introduces-source-failure",
+      "summary": "agent-introduces-source-failure",
+      "input_digest": "sha256:3be1ab10b9474cde4bda2ee0797e8fefd4f56c108ef89133b82f46d45c4e11e1",
+      "proof_refs": [
+        "acceptance:source-contract-control"
+      ]
+    },
+    {
+      "id": "agent-repairs-actual-source-failure",
+      "summary": "agent-repairs-actual-source-failure",
+      "input_digest": "sha256:24f6418bf61a33dad1b6d1caa36126019036ac90eb8422d8dd4646b16463d92b",
+      "proof_refs": [
+        "acceptance:source-contract-control"
+      ]
+    },
+    {
+      "id": "repair-stale-source-projections",
+      "summary": "repair-stale-source-projections",
+      "input_digest": "sha256:464d0360d3b0f099cf5241a76c18136662cc9885ae3cc6796dd257eca685aac2",
+      "proof_refs": [
+        "acceptance:source-contract-control"
+      ]
+    }
+  ],
+  "intents": {
+    "intent:change_01M7PJ9J9TS3PCNJF3E0AZ226P": {
+      "acceptance_criteria": [],
+      "assumptions": [],
+      "boundaries": [
+        "Current claimed task and isolated work branch"
+      ],
+      "constraints": [
+        "root"
+      ],
+      "created_sequence": 1,
+      "id": "intent:change_01M7PJ9J9TS3PCNJF3E0AZ226P",
+      "out_of_scope": [],
+      "proof_requirements": [],
+      "raw_intent": "Repair source and earn exact-proof PR admission",
+      "refined_intent": "Repair source and earn exact-proof PR admission",
+      "status": "refined",
+      "updated_sequence": 3
+    }
+  },
+  "sections": {
+    "plan": {
+      "constraints": {
+        "file_touch_budget": null,
+        "forbidden_paths": []
+      },
+      "deferred_questions": [],
+      "human_questions": [],
+      "intent": "Repair actual source failure while preserving both accepted assertions, obtain fresh full native proof, and admit only the exact GitHub head/base; admission does not authorize merge",
+      "phases": [],
+      "proof_hooks": [
+        "decapod validate"
+      ],
+      "schema_version": "1.1.0",
+      "spec_reviews": [
+        {
+          "disposition": "updated",
+          "path": ".decapod/managed/specs/ARCHITECTURE.md",
+          "reason": "Reviewed the current literal source assertions and exact-publication contract against the accepted fixture baseline",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
+          "spec_material_hash": "38fd7d8f92e560f0204d01ddc0839445c7a5e82cf4a241c593a5a996e664c661"
+        },
+        {
+          "disposition": "updated",
+          "path": ".decapod/managed/specs/INTERFACES.md",
+          "reason": "Reviewed the current literal source assertions and exact-publication contract against the accepted fixture baseline",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
+          "spec_material_hash": "82ea05a84706d5abd25e1aa492c7d5118d43535ce62f1c6e63200520526ca3af"
+        },
+        {
+          "disposition": "updated",
+          "path": ".decapod/managed/specs/SECURITY.md",
+          "reason": "Reviewed the current literal source assertions and exact-publication contract against the accepted fixture baseline",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
+          "spec_material_hash": "72d687cadc54103d243b4d8baa0edc74c9e1a67581d72d4ea2081c75613d6750"
+        }
+      ],
+      "state": "APPROVED",
+      "stop_conditions": [],
+      "title": "Repair source and earn exact-proof PR admission",
+      "todo_ids": [
+        "code_01m7pj94tkzaxqkf"
+      ],
+      "unknowns": [],
+      "unresolved_contradictions": [],
+      "updated_at": "1794980187Z"
+    },
+    "trajectory": {
+      "active_boundaries": [
+        "Current claimed task and isolated work branch"
+      ],
+      "artifact_hash": "sha256:1b420806e6530b2a097bdb9c36a94d10aaf45bd6cc13aa8abd4d80d87eb90dee",
+      "checks": [],
+      "current_phase": "intent",
+      "custody": {
+        "events": [
+          {
+            "event_id": "event:2",
+            "intent_id": "intent:change_01M7PJ9J9TS3PCNJF3E0AZ226P",
+            "kind": "created",
+            "sequence": 2
+          },
+          {
+            "event_id": "event:3",
+            "intent_id": "intent:change_01M7PJ9J9TS3PCNJF3E0AZ226P",
+            "kind": "refined",
+            "sequence": 3
+          }
+        ],
+        "knowledge_candidates": [],
+        "next_sequence": 3,
+        "schema_version": "1.0.0",
+        "trajectories": {}
+      },
+      "declared_commands": [],
+      "destination": "pull request",
+      "evidence": [],
+      "inspected_files": [],
+      "intent_id": "intent:change_01M7PJ9J9TS3PCNJF3E0AZ226P",
+      "modified_files": [],
+      "next_transitions": [
+        "Refine plan and declare falsifiable checks"
+      ],
+      "repo_scope": [
+        "root"
+      ],
+      "run_id": "branch_01M7PJ9JC1WD9V17AM8CSH1P2J",
+      "schema_version": "1.1.0",
+      "shortcut_risk_signals": [],
+      "task_id": "code_01m7pj94tkzaxqkf",
+      "tool_calls": [],
+      "unresolved_assumptions": []
+    }
+  }
 }

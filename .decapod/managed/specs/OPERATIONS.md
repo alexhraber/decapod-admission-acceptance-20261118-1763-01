@@ -134,3 +134,12 @@ Use structured logging (pino/winston) with request_id, actor, latency_ms, and er
 - [ ] Auth/authz tests pass.
 - [ ] Dependency vulnerability scan reviewed.
 - [ ] No unresolved critical/high security findings.
+
+<!-- decapod:codebase-attestation:start -->
+
+## Codebase Attestation
+
+- Repository signal fingerprint: `bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e`
+- Significant implementation surfaces: `src/` (2 files)
+- Refreshed from the current codebase by `decapod rpc --op specs.refresh`
+<!-- decapod:codebase-attestation:end -->
