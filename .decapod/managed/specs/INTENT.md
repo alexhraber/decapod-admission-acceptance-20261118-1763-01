@@ -132,7 +132,7 @@ flowchart LR
 
 ## Codebase Attestation
 
-- Repository signal fingerprint: `4b0722ce90562422562c3448c82bb7496fc170ec67a797dffaa80a8bfe229684`
+- Repository signal fingerprint: `bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e`
 - Significant implementation surfaces: `src/` (2 files)
 - Refreshed from the current codebase by `decapod rpc --op specs.refresh`
 <!-- decapod:codebase-attestation:end -->

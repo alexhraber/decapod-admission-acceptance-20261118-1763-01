@@ -16,6 +16,14 @@
       "proof_refs": [
         "acceptance:source-contract-control"
       ]
+    },
+    {
+      "id": "agent-repairs-actual-source-failure",
+      "summary": "agent-repairs-actual-source-failure",
+      "input_digest": "sha256:24f6418bf61a33dad1b6d1caa36126019036ac90eb8422d8dd4646b16463d92b",
+      "proof_refs": [
+        "acceptance:source-contract-control"
+      ]
     }
   ],
   "intents": {
@@ -57,21 +65,21 @@
           "disposition": "updated",
           "path": ".decapod/managed/specs/ARCHITECTURE.md",
           "reason": "Reviewed the current literal source assertions and exact-publication contract against the accepted fixture baseline",
-          "reviewed_code_fingerprint": "4b0722ce90562422562c3448c82bb7496fc170ec67a797dffaa80a8bfe229684",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "38fd7d8f92e560f0204d01ddc0839445c7a5e82cf4a241c593a5a996e664c661"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/INTERFACES.md",
           "reason": "Reviewed the current literal source assertions and exact-publication contract against the accepted fixture baseline",
-          "reviewed_code_fingerprint": "4b0722ce90562422562c3448c82bb7496fc170ec67a797dffaa80a8bfe229684",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "82ea05a84706d5abd25e1aa492c7d5118d43535ce62f1c6e63200520526ca3af"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/SECURITY.md",
           "reason": "Reviewed the current literal source assertions and exact-publication contract against the accepted fixture baseline",
-          "reviewed_code_fingerprint": "4b0722ce90562422562c3448c82bb7496fc170ec67a797dffaa80a8bfe229684",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "72d687cadc54103d243b4d8baa0edc74c9e1a67581d72d4ea2081c75613d6750"
         }
       ],
@@ -83,7 +91,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794979989Z"
+      "updated_at": "1794980044Z"
     },
     "trajectory": {
       "active_boundaries": [
